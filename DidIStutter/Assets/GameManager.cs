@@ -5,7 +5,9 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 
-    public Text Player1;
+    public Text Player1_Entered;
+    public Text Player1_Next;
+    public Text Player1_Remaining;
     public string Player1Ref;
     public int Player1Pos;
     public List<string> Player1Text = new List<string>();
@@ -63,10 +65,11 @@ public class GameManager : MonoBehaviour {
         if (Player1Pos < (Player1Ref.Length - 1))
             remainingText = Player1Ref.Substring(Player1Pos + 1);
 
-        string newText = "<color=\"green\">" + enteredText + "</color>" +
-                         "<color=\"" + nextCharColour + "\"><b>" + nextChar + "</b></color>" +
+        Player1_Entered.text = "<color=\"green\">" + enteredText + "</color>";
+        Player1_Next.text = "<color=\"#00000000\">" + enteredText + "</color>" +
+                         "<color=\"" + nextCharColour + "\"><b>" + nextChar + "</b></color>";
+        Player1_Remaining.text = "<color=\"#00000000\">" + enteredText + "</color>" +
+                         "<color=\"#00000000\"><b>" + nextChar + "</b></color>" +
                          "<color=\"white\">" + remainingText + "</color>";
-
-        Player1.text = newText;
     }
 }
