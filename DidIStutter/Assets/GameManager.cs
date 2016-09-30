@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         }
         if (Player1Line == 3)
         {
-            Player1Ref = ("He throws it around likes it weighs nothing as well.");
+            Player1Ref = ("He throws it around like it weighs nothing as well.");
         }
         if (Player1Line == 4)
         {
@@ -126,6 +126,6 @@ public class GameManager : MonoBehaviour
                          "<color=\"" + nextCharColour + "\"><b>" + nextChar + "</b></color>";
         Player1_Remaining.text = "<color=\"#00000000\">" + enteredText + "</color>" +
                          "<color=\"#00000000\"><b>" + nextChar + "</b></color>" +
-                         "<color=\"white\">" + remainingText + "</color>";
+                         "<color=\"#FFFFFF74\">" + remainingText + "</color>";
     }
 }

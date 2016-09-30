@@ -300,12 +300,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTextObject: {fileID: 1823822800}
   punchObject: {fileID: 444791607}
-  writingSpeed: 60
+  writingSpeed: 45
   punctuationPause: 0.25
   hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
   writeWholeWords: 0
   forceRichText: 1
-  instantComplete: 1
+  instantComplete: 0
 --- !u!114 &124885192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,8 +480,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 454, y: 101}
-  m_SizeDelta: {x: 503.9, y: 68.29999}
+  m_AnchoredPosition: {x: 487, y: 296}
+  m_SizeDelta: {x: 350, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &439663265
 CanvasRenderer:
@@ -519,7 +519,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: " <color=#00ffffff>\u2026hello</color><color=#0ffffff>\u2026 </color>\t"
 --- !u!1 &444791607
@@ -560,8 +560,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -302, y: 842}
-  m_SizeDelta: {x: 1500, y: 335}
+  m_AnchoredPosition: {x: -561, y: 584}
+  m_SizeDelta: {x: 1098, y: 349}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &444791609
 MonoBehaviour:
@@ -919,7 +919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &836958350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1017,10 +1017,13 @@ GameObject:
   - 114: {fileID: 887233948}
   - 114: {fileID: 887233932}
   - 114: {fileID: 887233931}
-  - 114: {fileID: 887233928}
-  - 114: {fileID: 887233920}
   - 114: {fileID: 887233927}
+  - 114: {fileID: 887233920}
+  - 114: {fileID: 887233951}
+  - 114: {fileID: 887233928}
   - 114: {fileID: 887233921}
+  - 114: {fileID: 887233952}
+  - 114: {fileID: 887233953}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1052,9 +1055,8 @@ MonoBehaviour:
     y: -350
     width: 1601
     height: 1048
-  selectedBlock: {fileID: 887233922}
-  selectedCommands:
-  - {fileID: 887233920}
+  selectedBlock: {fileID: 887233942}
+  selectedCommands: []
   variables:
   - {fileID: 887233915}
   description: 
@@ -1179,10 +1181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 39
+  itemId: 42
   errorMessage: 
   indentLevel: 0
-  storyText: Thanks for dropping me home.
+  storyText: Adamantium yeah
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1202,24 +1204,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 887233913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 41
+  itemId: 45
   errorMessage: 
   indentLevel: 0
-  storyText: "I had a really good time tonight.\r"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 0
-  stopVoiceover: 1
-  setSayDialog: {fileID: 124885185}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
 --- !u!114 &887233922
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1242,9 +1236,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 887233921}
   - {fileID: 887233920}
   - {fileID: 887233927}
-  - {fileID: 887233921}
   - {fileID: 887233919}
 --- !u!114 &887233923
 MonoBehaviour:
@@ -1359,24 +1353,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 887233913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 38
+  itemId: 44
   errorMessage: 
   indentLevel: 0
-  storyText: "I had a really good time tonight.\r"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 0
-  stopVoiceover: 1
-  setSayDialog: {fileID: 124885185}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
 --- !u!114 &887233929
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1399,9 +1385,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 887233928}
   - {fileID: 887233932}
   - {fileID: 887233931}
-  - {fileID: 887233928}
   - {fileID: 887233926}
 --- !u!114 &887233930
 MonoBehaviour:
@@ -1462,7 +1448,7 @@ MonoBehaviour:
   itemId: 36
   errorMessage: 
   indentLevel: 0
-  storyText: Thanks for dropping me home.
+  storyText: Maybe that stuff wolverine's claws are made out of.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1496,9 +1482,11 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 887233950}
   - {fileID: 887233949}
+  - {fileID: 887233950}
+  - {fileID: 887233951}
   - {fileID: 887233948}
+  - {fileID: 887233953}
   - {fileID: 887233930}
 --- !u!114 &887233934
 MonoBehaviour:
@@ -1698,8 +1686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 312
-    y: 66
+    x: 311
+    y: 67
     width: 120
     height: 40
   itemId: 5
@@ -1710,6 +1698,7 @@ MonoBehaviour:
   - {fileID: 887233941}
   - {fileID: 887233947}
   - {fileID: 887233940}
+  - {fileID: 887233952}
   - {fileID: 887233939}
 --- !u!114 &887233943
 MonoBehaviour:
@@ -1825,7 +1814,7 @@ MonoBehaviour:
   itemId: 35
   errorMessage: 
   indentLevel: 0
-  storyText: "I had a really good time tonight.\r"
+  storyText: I wonder what captain america's shield is made out of?!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1869,7 +1858,7 @@ MonoBehaviour:
   itemId: 33
   errorMessage: 
   indentLevel: 0
-  storyText: Thanks for dropping me home.
+  storyText: The movie was a lot better then I thought it would be.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1881,6 +1870,60 @@ MonoBehaviour:
   waitForClick: 0
   stopVoiceover: 1
   setSayDialog: {fileID: 124885185}
+--- !u!114 &887233951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887233913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 43
+  errorMessage: 
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
+--- !u!114 &887233952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887233913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  errorMessage: 
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
+--- !u!114 &887233953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887233913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 47
+  errorMessage: 
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
 --- !u!1 &907200908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,7 +2430,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 133, y: 204}
+  m_AnchoredPosition: {x: -343, y: 71}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1687049627
@@ -2750,7 +2793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.456}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2768,7 +2811,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: " <color=#00ffffff>\u2026hello</color><color=#0ffffff>\u2026 </color>\t"
 --- !u!222 &1853552710
@@ -2792,8 +2835,8 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 454, y: 101}
-  m_SizeDelta: {x: 503.9, y: 68.29999}
+  m_AnchoredPosition: {x: 487, y: 296}
+  m_SizeDelta: {x: 350, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1866259051
 GameObject:
@@ -2827,8 +2870,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 454, y: 101}
-  m_SizeDelta: {x: 503.9, y: 68.29999}
+  m_AnchoredPosition: {x: 487, y: 296}
+  m_SizeDelta: {x: 350, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866259053
 MonoBehaviour:
@@ -2860,7 +2903,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: " <color=#00ffffff>\u2026hello</color><color=#0ffffff>\u2026 </color>\t"
 --- !u!222 &1866259054
@@ -2963,7 +3006,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212, y: -203}
+  m_AnchoredPosition: {x: 354, y: 77}
   m_SizeDelta: {x: 148, y: 106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2116168399
