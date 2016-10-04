@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: ba8b2048e2733ad4b99bd7cf2f8745e4
+timeCreated: 1475586300
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 30
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Jenna Sue
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
