@@ -42,11 +42,11 @@ public class GameManager : MonoBehaviour
         }
         if (Player1Line == 3)
         {
-            Player1Ref = ("the movie was great. lots of action and a little romance.");
+            Player1Ref = ("the movie was great!");
         }
         if (Player1Line == 4)
         {
-            Player1Ref = ("I Love the swiss chocolate flavour and the chocolate sauce on top.");
+            Player1Ref = ("I love the swiss chocolate flavour and the chocolate sauce on top.");
         }
         if (Player1Line == 5)
         {
