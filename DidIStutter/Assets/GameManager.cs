@@ -17,6 +17,18 @@ public class GameManager : MonoBehaviour
 
     public Flowchart Dialogue;
     public bool canPlayerType = false;
+    public Text fungusdialogue;
+
+    public Image girl;
+    public Image guy;
+    public Image[] test;
+    public Image[] guytest;
+
+    public AudioSource sound;
+    public AudioEchoFilter sound1;
+
+    public float soundlerptimer;
+    public float soundlerptotal = 3f;
 
     // Use this for initialization
     void Start()
@@ -34,39 +46,63 @@ public class GameManager : MonoBehaviour
 
         if (Player1Line == 1)
         {
+            girl.sprite = test[7].sprite;
+            guy.sprite = guytest[4].sprite;
+            enteredcolor = "#0B96F9FF";
+            Remainingcolor = "#F9900BFF";
             Player1Ref = ("I had an amazing time too.");
         }
         if (Player1Line == 2)
         {
+            enteredcolor = "green";
+            Remainingcolor = "#FFFFFF74";
             Player1Ref = ("oh yeah me too. Me too.");
         }
         if (Player1Line == 3)
         {
-            Player1Ref = ("the movie was great!");
+            enteredcolor = "#0B96F9FF";
+            Remainingcolor = "#F9900BFF";
+            Player1Ref = ("the movie was great");
         }
         if (Player1Line == 4)
         {
-            Player1Ref = ("I love the swiss chocolate flavour and the chocolate sauce on top.");
+            enteredcolor = "#0B96F9FF";
+            Remainingcolor = "#F9900BFF";
+            Player1Ref = ("I loved the swiss chocolate flavour and the chocolate sauce on top.");
         }
         if (Player1Line == 5)
         {
+            guy.sprite = guytest[2].sprite;
+            enteredcolor = "green";
+            Remainingcolor = "#FFFFFF74";
             Player1Ref = ("yep, me too.");
         }
         if (Player1Line == 6)
         {
-            Player1Ref = ("it’s cool the way it bounces off everything too.");
+            enteredcolor = "#0B96F9FF";
+            Remainingcolor = "#F9900BFF";
+            Player1Ref = ("its cool the way it bounces off everything too.");
         }
         if (Player1Line == 7)
         {
+            guy.sprite = guytest[7].sprite;
+            enteredcolor = "green";
+            Remainingcolor = "#FFFFFF74";
             Player1Ref = ("yeah I wonder.");
         }
         if (Player1Line == 8)
         {
+            guy.sprite = guytest[8].sprite;
+            enteredcolor = "green";
+            Remainingcolor = "#FFFFFF74";
             Player1Ref = ("aaaaaadmantm or something?");
         }
         if (Player1Line == 9)
         {
-            Player1Ref = ("the blue of your dress matches your eyes.");
+            soundlerptimer = soundlerptotal;
+            enteredcolor = "#0B96F9FF";
+            Remainingcolor = "#F9900BFF";
+            Player1Ref = ("the blue of your dress matches your eyes");
         }
         if (Player1Line == 10)
         {
@@ -74,15 +110,23 @@ public class GameManager : MonoBehaviour
         }
         if (Player1Line == 11)
         {
-            Player1Ref = ("your soft looking lips");
+            Player1Ref = ("your lips... soft looking");
         }
         if (Player1Line == 12)
         {
+            guy.sprite = guytest[0].sprite;
+            enteredcolor = "green";
+            Remainingcolor = "#FFFFFF74";
             Player1Ref = ("thanks.");
+            girl.sprite = test[4].sprite;
         }
         if (Player1Line == 13)
         {
-            Player1Ref = ("i’d love to go out again on saturday.");
+            guy.sprite = guytest[4].sprite;
+            enteredcolor = "#0B96F9FF";
+            Remainingcolor = "#F9900BFF";
+            fungusdialogue.fontSize = 90;
+            Player1Ref = ("id love to go out again on saturday.");
         }
         if (Player1Line == 14)
         {
@@ -94,19 +138,26 @@ public class GameManager : MonoBehaviour
         }
         if (Player1Line == 16)
         {
+            guy.sprite = guytest[6].sprite;
             Player1Ref = ("don't you think it's too soon to meet your whole family?");
+            girl.sprite = test[3].sprite;
         }
         if (Player1Line == 17)
         {
-            Player1Ref = ("arrruhhhhhmm I think i’m busy saturday.");
+            enteredcolor = "green";
+            Remainingcolor = "#FFFFFF74";
+            Player1Ref = ("arrruhhhhhmm I think im busy saturday.");
+            girl.sprite = test[1].sprite;
         }
         if (Player1Line == 18)
         {
+            enteredcolor = "#0B96F9FF";
+            Remainingcolor = "#F9900BFF";
             Player1Ref = ("I feel intoxicated by you.");
         }
         if (Player1Line == 19)
         {
-            Player1Ref = ("I can’t breathe when I’m around you.");
+            Player1Ref = ("I cant breathe when Im around you.");
         }
         if (Player1Line == 20)
         {
@@ -114,10 +165,15 @@ public class GameManager : MonoBehaviour
         }
         if (Player1Line == 21)
         {
-            Player1Ref = ("you’re cool.");
+            enteredcolor = "green";
+            Remainingcolor = "#FFFFFF74";
+            Player1Ref = ("youre cool.");
         }
         if (Player1Line == 22)
         {
+            guy.sprite = guytest[6].sprite;
+            enteredcolor = "#0B96F9FF";
+            Remainingcolor = "#F9900BFF";
             Player1Ref = ("I want to love you.");
         }
         if (Player1Line == 23)
@@ -130,19 +186,27 @@ public class GameManager : MonoBehaviour
         }
         if (Player1Line == 25)
         {
+            enteredcolor = "green";
+            Remainingcolor = "#FFFFFF74";
             Player1Ref = ("…");
         }
         if (Player1Line == 26)
         {
             Player1Ref = ("sorry");
+            girl.sprite = test[5].sprite;
         }
         if (Player1Line == 27)
         {
+            guy.sprite = guytest[4].sprite;
             Player1Ref = ("yeahhh");
+            sound.pitch = 1f;
+            sound1.enabled = false;
         }
         if (Player1Line == 28)
         {
+            guy.sprite = guytest[8].sprite;
             Player1Ref = ("I am kinda weird.");
+            girl.sprite = test[2].sprite;
         }
         if (Player1Line == 29)
         {
@@ -150,11 +214,13 @@ public class GameManager : MonoBehaviour
         }
         if (Player1Line == 30)
         {
+            guy.sprite = guytest[1].sprite;
             Player1Ref = ("I think I really like you.");
         }
         if (Player1Line == 31)
         {
             Player1Ref = ("of course. I would really like to get to know you better.");
+            girl.sprite = test[7].sprite;
         }
         UpdateText();
     }
@@ -162,6 +228,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(soundlerptimer > 0)
+        {
+            soundlerptimer -= Time.deltaTime;
+            sound.pitch = Mathf.Lerp(1f, 0.41f, 1f - (soundlerptimer / soundlerptotal));
+            sound1.enabled = true;
+        }
+
         if (canPlayerType)
         {
 
@@ -198,13 +271,104 @@ public class GameManager : MonoBehaviour
                 bool allowCharacterToTalk = true;
 
                 //for extending multiple lines into before fungus triggers
-                if (Player1Line == 2)
+                if (Player1Line == 1)
                 {
                     CharacterFinishedTalking();
                     allowCharacterToTalk = false;
                 }
 
-                if (allowCharacterToTalk)
+                else if (Player1Line == 3)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 4)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 6)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 9)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 10)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 11)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 13)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 14)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 15)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 16)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 18)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 19)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 20)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 22)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 23)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 24)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 25)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+                else if (Player1Line == 27)
+                {
+                    CharacterFinishedTalking();
+                    allowCharacterToTalk = false;
+                }
+
+                else if (allowCharacterToTalk)
                 {
                     //move along conversation
                     canPlayerType = false;
@@ -213,6 +377,9 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+    public string enteredcolor = "green";
+    public string Remainingcolor = "#FFFFFF74";
+
 
     void UpdateText(string nextCharColour = "white")
     {
@@ -228,11 +395,16 @@ public class GameManager : MonoBehaviour
         if (Player1Pos < (Player1Ref.Length - 1))
             remainingText = Player1Ref.Substring(Player1Pos + 1);
 
-        Player1_Entered.text = "<color=\"green\">" + enteredText + "</color>";
+        Player1_Entered.text = "<color=\"" + enteredcolor + "\">" + enteredText + "</color>";
         Player1_Next.text = "<color=\"#00000000\">" + enteredText + "</color>" +
                          "<color=\"" + nextCharColour + "\"><b>" + nextChar + "</b></color>";
         Player1_Remaining.text = "<color=\"#00000000\">" + enteredText + "</color>" +
                          "<color=\"#00000000\"><b>" + nextChar + "</b></color>" +
-                         "<color=\"#FFFFFF74\">" + remainingText + "</color>";
+                         "<color=\"" + Remainingcolor + "\">" + remainingText + "</color>";
+    }
+
+    public void textsizechange(int sizechange)
+    {
+        fungusdialogue.fontSize = sizechange;
     }
 }
