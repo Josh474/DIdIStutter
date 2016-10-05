@@ -50,176 +50,176 @@ public class GameManager : MonoBehaviour
             guy.sprite = guytest[4].sprite;
             enteredcolor = "#0B96F9FF";
             Remainingcolor = "#F9900BFF";
-            Player1Ref = ("I had an amazing time too.");
+            Player1Ref = ("I had an amazing time too");
         }
-        if (Player1Line == 2)
+        else if (Player1Line == 2)
         {
             enteredcolor = "green";
             Remainingcolor = "#FFFFFF74";
-            Player1Ref = ("oh yeah me too. Me too.");
+            Player1Ref = ("Oh yeah me too. Me too");
         }
-        if (Player1Line == 3)
+        else if (Player1Line == 3)
         {
             enteredcolor = "#0B96F9FF";
             Remainingcolor = "#F9900BFF";
-            Player1Ref = ("the movie was great");
+            Player1Ref = ("The movie was great");
         }
-        if (Player1Line == 4)
+        else if (Player1Line == 4)
         {
             enteredcolor = "#0B96F9FF";
             Remainingcolor = "#F9900BFF";
-            Player1Ref = ("I loved the swiss chocolate flavour and the chocolate sauce on top.");
+            Player1Ref = ("I loved the swiss chocolate flavour and the chocolate sauce on top");
         }
-        if (Player1Line == 5)
+        else if (Player1Line == 5)
         {
             guy.sprite = guytest[2].sprite;
             enteredcolor = "green";
             Remainingcolor = "#FFFFFF74";
-            Player1Ref = ("yep, me too.");
+            Player1Ref = ("Yep, me too");
         }
-        if (Player1Line == 6)
+        else if (Player1Line == 6)
         {
             enteredcolor = "#0B96F9FF";
             Remainingcolor = "#F9900BFF";
-            Player1Ref = ("its cool the way it bounces off everything too.");
+            Player1Ref = ("It's cool the way it bounces off everything too");
         }
-        if (Player1Line == 7)
+        else if (Player1Line == 7)
         {
             guy.sprite = guytest[7].sprite;
             enteredcolor = "green";
             Remainingcolor = "#FFFFFF74";
-            Player1Ref = ("yeah I wonder.");
+            Player1Ref = ("Yeah I wonder");
         }
-        if (Player1Line == 8)
+        else if (Player1Line == 8)
         {
             guy.sprite = guytest[8].sprite;
             enteredcolor = "green";
             Remainingcolor = "#FFFFFF74";
-            Player1Ref = ("aaaaaadmantm or something?");
+            Player1Ref = ("AAAaaadmantm or something?");
         }
-        if (Player1Line == 9)
+        else if (Player1Line == 9)
         {
             soundlerptimer = soundlerptotal;
             enteredcolor = "#0B96F9FF";
             Remainingcolor = "#F9900BFF";
-            Player1Ref = ("the blue of your dress matches your eyes");
+            Player1Ref = ("The blue of your dress matches your eyes");
         }
-        if (Player1Line == 10)
+        else if (Player1Line == 10)
         {
-            Player1Ref = ("your wavy hair is adoreable");
+            Player1Ref = ("Your wavy hair is adorable");
         }
-        if (Player1Line == 11)
+        else if (Player1Line == 11)
         {
-            Player1Ref = ("your lips... soft looking");
+            Player1Ref = ("Your lips soft looking"); //fix this
         }
-        if (Player1Line == 12)
+        else if (Player1Line == 12)
         {
             guy.sprite = guytest[0].sprite;
             enteredcolor = "green";
             Remainingcolor = "#FFFFFF74";
-            Player1Ref = ("thanks.");
+            Player1Ref = ("Thanks");
             girl.sprite = test[4].sprite;
         }
-        if (Player1Line == 13)
+        else if (Player1Line == 13)
         {
             guy.sprite = guytest[4].sprite;
             enteredcolor = "#0B96F9FF";
             Remainingcolor = "#F9900BFF";
             fungusdialogue.fontSize = 90;
-            Player1Ref = ("id love to go out again on saturday.");
+            Player1Ref = ("I'd love to go out again on saturday");
         }
-        if (Player1Line == 14)
+        else if (Player1Line == 14)
         {
-            Player1Ref = ("the party sounds great.");
+            Player1Ref = ("The party sounds great");
         }
-        if (Player1Line == 15)
+        else if (Player1Line == 15)
         {
-            Player1Ref = ("oh who's your favourite band?");
+            Player1Ref = ("Oh who's your favourite band?");
         }
-        if (Player1Line == 16)
+        else if (Player1Line == 16)
         {
             guy.sprite = guytest[6].sprite;
-            Player1Ref = ("don't you think it's too soon to meet your whole family?");
+            Player1Ref = ("Don't you think it's too soon to meet your whole family?");
             girl.sprite = test[3].sprite;
         }
-        if (Player1Line == 17)
+        else if (Player1Line == 17)
         {
             enteredcolor = "green";
             Remainingcolor = "#FFFFFF74";
-            Player1Ref = ("arrruhhhhhmm I think im busy saturday.");
+            Player1Ref = ("arrruhhhhhmm I think I'm busy saturday");
             girl.sprite = test[1].sprite;
         }
-        if (Player1Line == 18)
+        else if (Player1Line == 18)
         {
             enteredcolor = "#0B96F9FF";
             Remainingcolor = "#F9900BFF";
-            Player1Ref = ("I feel intoxicated by you.");
+            Player1Ref = ("I feel intoxicated by you");
         }
-        if (Player1Line == 19)
+        else if (Player1Line == 19)
         {
-            Player1Ref = ("I cant breathe when Im around you.");
+            Player1Ref = ("I can't breathe when I'm around you");
         }
-        if (Player1Line == 20)
+        else if (Player1Line == 20)
         {
-            Player1Ref = ("this has been the best night of my life.");
+            Player1Ref = ("This has been the best night of my life");
         }
-        if (Player1Line == 21)
+        else if (Player1Line == 21)
         {
             enteredcolor = "green";
             Remainingcolor = "#FFFFFF74";
-            Player1Ref = ("youre cool.");
+            Player1Ref = ("You're cool");
         }
-        if (Player1Line == 22)
+        else if (Player1Line == 22)
         {
             guy.sprite = guytest[6].sprite;
             enteredcolor = "#0B96F9FF";
             Remainingcolor = "#F9900BFF";
-            Player1Ref = ("I want to love you.");
+            Player1Ref = ("I want to love you");
         }
-        if (Player1Line == 23)
+        else if (Player1Line == 23)
         {
-            Player1Ref = ("you brighten my incredibly dim world.");
+            Player1Ref = ("You brighten my incredibly dim world");
         }
-        if (Player1Line == 24)
+        else if (Player1Line == 24)
         {
-            Player1Ref = ("you bring joy to my world.");
+            Player1Ref = ("You bring joy to my world");
         }
-        if (Player1Line == 25)
+        else if (Player1Line == 25)
         {
             enteredcolor = "green";
             Remainingcolor = "#FFFFFF74";
-            Player1Ref = ("…");
+            Player1Ref = ("...");
         }
-        if (Player1Line == 26)
+        else if (Player1Line == 26)
         {
-            Player1Ref = ("sorry");
+            Player1Ref = ("Sorry");
             girl.sprite = test[5].sprite;
         }
-        if (Player1Line == 27)
+        else if (Player1Line == 27)
         {
             guy.sprite = guytest[4].sprite;
-            Player1Ref = ("yeahhh");
+            Player1Ref = ("Yeahhh");
             sound.pitch = 1f;
             sound1.enabled = false;
         }
-        if (Player1Line == 28)
+        else if (Player1Line == 28)
         {
             guy.sprite = guytest[8].sprite;
-            Player1Ref = ("I am kinda weird.");
+            Player1Ref = ("I am kinda weird");
             girl.sprite = test[2].sprite;
         }
-        if (Player1Line == 29)
+        else if (Player1Line == 29)
         {
-            Player1Ref = ("I just have trouble speaking sometimes.");
+            Player1Ref = ("I just have trouble speaking sometimes");
         }
-        if (Player1Line == 30)
+        else if (Player1Line == 30)
         {
             guy.sprite = guytest[1].sprite;
-            Player1Ref = ("I think I really like you.");
+            Player1Ref = ("I think I really like you");
         }
-        if (Player1Line == 31)
+        else if (Player1Line == 31)
         {
-            Player1Ref = ("of course. I would really like to get to know you better.");
+            Player1Ref = ("Of course. I would really like to get to know you better");
             girl.sprite = test[7].sprite;
         }
         UpdateText();

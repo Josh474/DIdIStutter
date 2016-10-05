@@ -1703,7 +1703,7 @@ MonoBehaviour:
     y: -350
     width: 1601
     height: 1444.6362
-  selectedBlock: {fileID: 0}
+  selectedBlock: {fileID: 887233942}
   selectedCommands: []
   variables:
   - {fileID: 887233915}
@@ -1832,7 +1832,7 @@ MonoBehaviour:
   itemId: 42
   errorMessage: 
   indentLevel: 0
-  storyText: "A bit like Thor\u2019s hammer.\r"
+  storyText: "A bit like Thor\u2019s hammer"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   itemId: 7
   errorMessage: 
   indentLevel: 0
-  storyText: "I had a really good time tonight.\r"
+  storyText: I had a really good time tonight
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2313,7 +2313,7 @@ MonoBehaviour:
   itemId: 6
   errorMessage: 
   indentLevel: 0
-  storyText: Thanks for dropping me home.
+  storyText: Thanks for dropping me home
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2490,7 +2490,7 @@ MonoBehaviour:
   itemId: 35
   errorMessage: 
   indentLevel: 0
-  storyText: "That ice cream was to die for too.\r"
+  storyText: That ice cream was to die for too
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2534,7 +2534,7 @@ MonoBehaviour:
   itemId: 33
   errorMessage: 
   indentLevel: 0
-  storyText: The movie was a lot better then I thought it would be.
+  storyText: The movie was a lot better then I thought it would be
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2671,7 +2671,7 @@ MonoBehaviour:
   itemId: 54
   errorMessage: 
   indentLevel: 0
-  storyText: I really like your shirt, those red buttons are awesome.
+  storyText: I really like your shirt, those red buttons are awesome
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2803,7 +2803,7 @@ MonoBehaviour:
   itemId: 49
   errorMessage: 
   indentLevel: 0
-  storyText: Maybe that stuff wolverine's claws are made out of.
+  storyText: Maybe that stuff wolverine's claws are made out of
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2829,7 +2829,7 @@ MonoBehaviour:
   itemId: 48
   errorMessage: 
   indentLevel: 0
-  storyText: He throws it around like it weighs nothing.
+  storyText: He throws it around like it weighs nothing
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2972,7 +2972,7 @@ MonoBehaviour:
   itemId: 126
   errorMessage: 
   indentLevel: 0
-  storyText: I really like you too.
+  storyText: I really like you too
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3149,7 +3149,7 @@ MonoBehaviour:
   itemId: 113
   errorMessage: 
   indentLevel: 0
-  storyText: ' Just a bit quiet.'
+  storyText: ' Just a bit quiet'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3220,7 +3220,7 @@ MonoBehaviour:
   itemId: 110
   errorMessage: 
   indentLevel: 0
-  storyText: "No you\u2019re not."
+  storyText: "No you\u2019re not"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3383,7 +3383,7 @@ MonoBehaviour:
   itemId: 103
   errorMessage: 
   indentLevel: 0
-  storyText: Just take your time.
+  storyText: Just take your time
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3544,7 +3544,7 @@ MonoBehaviour:
   itemId: 94
   errorMessage: 
   indentLevel: 0
-  storyText: "Yeah, you\u2019re cool too\u2026."
+  storyText: "Yeah, you\u2019re cool too..."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3821,7 +3821,7 @@ MonoBehaviour:
   itemId: 76
   errorMessage: 
   indentLevel: 0
-  storyText: You're being really quiet.
+  storyText: You're being really quiet
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3983,7 +3983,7 @@ MonoBehaviour:
   itemId: 69
   errorMessage: 
   indentLevel: 0
-  storyText: Everyone will be there.
+  storyText: Everyone will be there
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4027,7 +4027,7 @@ MonoBehaviour:
   itemId: 67
   errorMessage: 
   indentLevel: 0
-  storyText: My brother and his girlfriend are getting engaged.
+  storyText: My brother and his girlfriend are getting engaged
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4186,7 +4186,7 @@ MonoBehaviour:
   itemId: 60
   errorMessage: 
   indentLevel: 0
-  storyText: "Hey I\u2019m going to a party on Saturday."
+  storyText: "Hey I\u2019m going to a party on Saturday"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
