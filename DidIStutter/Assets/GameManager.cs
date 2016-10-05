@@ -391,6 +391,8 @@ public class GameManager : MonoBehaviour
         if (Player1Pos < Player1Ref.Length)
             nextChar = Player1Ref.Substring(Player1Pos, 1);
 
+
+
         // is there at least 2 more characters left?
         if (Player1Pos < (Player1Ref.Length - 1))
             remainingText = Player1Ref.Substring(Player1Pos + 1);
